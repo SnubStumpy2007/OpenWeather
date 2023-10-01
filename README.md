@@ -21,8 +21,7 @@ This is a simple weather app that allows users to search for the weather forecas
 ## Installation
 
 1. Clone this repository to your local machine.
-
-git clone https://github.com/your-username/weather-app.git
+git clone git@github.com:SnubStumpy2007/OpenWeather.git
 
 
 2. Open the `index.html` file in a web browser to use the app.
