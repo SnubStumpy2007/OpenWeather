@@ -1,22 +1,27 @@
-*{
+/* Reset default margin, padding, and font family for all elements */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-   
+
+/* Set the background color for the entire page */
 body {
     background-color: #222;
 }
 
-.card{
+/* Style for the main card containing weather information */
+.card {
     width: 90%;
     max-width: 470px;
+    /* Create a gradient background */
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
     margin: 40px 35px;
     text-align: center;
 }
 
+/* Style for the search bar section */
 .search {
     width: 100%;
     display: flex;
@@ -24,6 +29,7 @@ body {
     justify-content: space-between;
 }
 
+/* Style for the search input field */
 .search input {
     border: 0;
     outline: 0;
@@ -36,31 +42,24 @@ body {
     font-size: 18px;
 }
 
+/* Style for the search button */
 .search button {
     border: 0;
     outline: 0;
     background: #ebffeb;
     border-radius: 50%;
     width: 60px;
-    height: 60px; 
+    height: 60px;
     cursor: pointer;
 }
 
+/* Style for the weather icon images */
 .weather-icon {
     width: 170px;
     margin-top: 30px;
 }
-.weather h1 {
-    font-size: 80px;
-    font-weight: 500;
-}
 
-.weather h2 {
-    font-size: 80px;
-    font-weight: 500;
-    margin-top: -10px;
-}
-
+/* Style for the weather details section */
 .details {
     display: flex;
     align-items: center;
@@ -69,26 +68,32 @@ body {
     margin-top: 50px;
 }
 
+/* Style for columns within the details section */
 .col {
     display: flex;
     align-items: center;
     text-align: left;
 }
 
+/* Style for icons within columns */
 .col img {
     width: 40px;
     margin-right: 10px;
 }
 
+/* Style for humidity and wind text */
 .humidity, .wind {
     font-size: 28px;
     margin-top: -6px;
 }
 
+/* Style for weather description text */
 .weather {
-    display: none;
+    display: block;
+    font-size: 14px;
 }
 
+/* Style for error messages */
 .error {
     text-align: left;
     margin-left: 10px;

@@ -3,64 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Weather App</title>
 </head>
 <body>
     <div class="card">
         <div class="search">
+            <!-- Search Form -->
             <form id="search-form">
-                <input type="text" class="search" placeholder="enter city name" spellcheck="false"/>
-                <button type="submit"><img src="images/images/search.png"></button>
+                <!-- Input Field for City Name -->
+                <input type="text" id="search" placeholder="enter city name" spellcheck="false" />
+                <!-- Submit Button with Search Icon -->
+                <button type="submit"><img src="images/search.png"></button>
             </form>
-
-
         </div>
-            <div class="error">
-                <p>Invalid city name</p>
+        <!-- Error Container for Invalid City Name -->
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <!-- Container for Weather Forecast -->
+        <div class="forecast">
+            <!-- Day 1 Forecast -->
+            <div class="day">
+                <!-- Date for Day 1 -->
+                <h2 class="date">Day 1 Date</h2>
+                <!-- Placeholder for Temperature (to be filled by JavaScript) -->
+                <p class="temp"></p>
+                <!-- Placeholder for Weather Description (to be filled by JavaScript) -->
+                <p class="weather"></p>
             </div>
-            <div class="forecast">
-                <!-- Day 1 Forecast -->
-                <div class="day">
-                    <h2 class="date">Day 1 Date</h2>
-                    <img src="images/images/sunny.png" alt="sunny" class="weather-icon">
-                    <p class="temp">22°C</p>
-                    <p class="description">Sunny</p>
-                </div>
             
-                <!-- Repeat the above structure for each day (Day 2, Day 3, Day 4, Day 5) -->
-                <div class="day">
-                    <h2 class="date">Day 2 Date</h2>
-                    <img src="images/images/cloudy.png" alt="cloudy" class="weather-icon">
-                    <p class="temp">20°C</p>
-                    <p class="description">Cloudy</p>
-                </div>
-            
-                <!-- Day 3 -->
-                <div class="day">
-                    <h2 class="date">Day 3 Date</h2>
-                    <img src="images/images/rain.png" alt="rain" class="weather-icon">
-                    <p class="temp">18°C</p>
-                    <p class="description">Rainy</p>
-                </div>
-            
-                <!-- Day 4 -->
-                <div class="day">
-                    <h2 class="date">Day 4 Date</h2>
-                    <img src="images/images/snow.png" alt="snow" class="weather-icon">
-                    <p class="temp">10°C</p>
-                    <p class="description">Snowy</p>
-                </div>
-            
-                <!-- Day 5 -->
-                <div class="day">
-                    <h2 class="date">Day 5 Date</h2>
-                    <img src="images/images/windy.png" alt="windy" class="weather-icon">
-                    <p class="temp">15°C</p>
-                    <p class="description">Windy</p>
-                </div>
+            <!-- Day 2 -->
+            <div class="day">
+                <!-- Date for Day 2 -->
+                <h2 class="date">Day 2 Date</h2>
+                <!-- Placeholder for Temperature (to be filled by JavaScript) -->
+                <p class="temp"></p>
+                <!-- Placeholder for Weather Description (to be filled by JavaScript) -->
+                <p class="weather"></p>
             </div>
+            
+            <!-- Day 3 -->
+            <div class="day">
+                <!-- Date for Day 3 -->
+                <h2 class="date">Day 3 Date</h2>
+                <!-- Placeholder for Temperature (to be filled by JavaScript) -->
+                <p class="temp"></p>
+                <!-- Placeholder for Weather Description (to be filled by JavaScript) -->
+                <p class="weather"></p>
+            </div>
+            
+            <!-- Day 4 -->
+            <div class="day">
+                <!-- Date for Day 4 -->
+                <h2 class="date">Day 4 Date</h2>
+                <!-- Placeholder for Temperature (to be filled by JavaScript) -->
+                <p class="temp"></p>
+                <!-- Placeholder for Weather Description (to be filled by JavaScript) -->
+                <p class="weather"></p>
+            </div>
+            
+            <!-- Day 5 -->
+            <div class="day">
+                <!-- Date for Day 5 -->
+                <h2 class="date">Day 5 Date</h2>
+                <!-- Placeholder for Temperature (to be filled by JavaScript) -->
+                <p class="temp"></p>
+                <!-- Placeholder for Weather Description (to be filled by JavaScript) -->
+                <p class="weather"></p>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
